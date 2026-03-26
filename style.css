@@ -1,0 +1,72 @@
+body {font-family: Lunar Escape; color: #E5E7EB; background-color: black;}
+
+h1, h2, #chapter {text-align: center;}
+
+#chapter {list-style-position: inside; padding-left: 0;}
+
+#chapter.horizontal-list {
+  display: flex; 
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  list-style-position: inside;
+}
+
+a:link {color: #D97706;}
+
+a:active {color:#C2410C;}
+
+a:visited {color: #754003;}
+
+ol li:has(a)::marker {
+  color: #D97706;
+}
+
+ol li.clicked:has(a)::marker {
+  color: #754003;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+#main1 {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+#main2 {
+  transition: margin-left .5s;
+  padding: 20px;
+}
