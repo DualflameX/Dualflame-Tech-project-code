@@ -9,11 +9,14 @@ h1, h2, #chapter {text-align: center;}
 #chapter {list-style-position: inside; padding-left: 0;}
 
 #chapter.horizontal-list {
-  display: flex; 
-  justify-content: center;
-  gap: 30px;
+  display: block;
+  text-align: center;
   padding: 0;
-  list-style-position: inside;
+}
+
+#chapter.horizontal-list li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
 a:link {color: #D97706;}
