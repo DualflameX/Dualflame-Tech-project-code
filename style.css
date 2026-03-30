@@ -4,7 +4,7 @@ html {
 
 body {font-family: Lunar Escape; color: #E5E7EB; background-color: black;}
 
-h1, h2, {text-align: center;}
+h1, h2 {text-align: center;}
 
 .chapter, .myList {
     text-align: center;
