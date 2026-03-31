@@ -1,6 +1,10 @@
-body {font-family: Lunar Escape; color: #E5E7EB; background-color: black;}
+html, body {
+  scroll-behavior: smooth !important;
+  height: auto;
+  overflow-x: hidden;
+}
 
-html {scroll-behavior: smooth;}
+body {font-family: Lunar Escape; color: #E5E7EB; background-color: black;}
 
 h1, h2, #chapter {text-align: center;}
 
