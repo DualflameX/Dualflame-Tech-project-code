@@ -1,4 +1,4 @@
-html, body {scroll-behavior: smooth;}
+html, body {scroll-behavior: smooth !important;}
 
 body {font-family: Lunar Escape; color: #E5E7EB; background-color: black;}
 
