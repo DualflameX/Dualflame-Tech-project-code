@@ -22,7 +22,7 @@ a:link {color: #D97706;}
 
 a:active {color:#C2410C;}
 
-a:visited {color: #754003;}
+.clicked-link { color: #754003 !important;}
 
 ol li:has(a)::marker {
   color: #D97706;
