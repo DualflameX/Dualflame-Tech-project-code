@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth !important;
   overflow-x: clip;
+  scroll-padding-top: 70px;
 }
 
 body {font-family: Lunar Escape; color: #E5E7EB; background-color: black; margin: 0;
