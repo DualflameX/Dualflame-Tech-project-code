@@ -7,16 +7,6 @@ body {font-family: Lunar Escape; color: #E5E7EB; background-color: black; margin
 
 h1, h2 {text-align: center;}
 
-.chapter {text-align: center; list-style-position: inside; padding-left: 0;}
-
-.chapter.horizontal-list {
-  display: flex; 
-  justify-content: center;
-  gap: 30px;
-  padding: 0;
-  list-style-position: inside;
-}
-
 a:link {color: #D97706;}
 
 a:active {color:#C2410C;}
@@ -27,7 +17,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: black;
   position: fixed;
   bottom: 0;
@@ -36,9 +25,14 @@ ul {
 
 ul li {
   float: left;
+  border-right:3px solid #E5E7EB;
 }
 
-ul li a {
+ul li:last-child {
+  border-right: none;
+}
+
+ul li a, .dropbtn {
   display: block;
   color: white;
   text-align: center;
@@ -46,13 +40,43 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover:not(.active) {
+ul li a:hover:not(.active), .dropdown:hover .dropbtn {
   background-color: #111;
 }
 
 ul li a.active {
   background-color: #04AA6D;
 }
+
+ul li.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #D97706;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 ol li:has(a)::marker {
   color: #D97706;
