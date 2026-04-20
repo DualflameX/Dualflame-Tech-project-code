@@ -21,10 +21,10 @@ ul {
   position: fixed;
   bottom: 0;
   width: 100%;
+  display: flex;
 }
 
 ul li {
-  float: left;
   border-right:3px solid #E5E7EB;
 }
 
@@ -49,8 +49,8 @@ ul li a.active {
 }
 
 ul li.dropdown {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .dropdown-content {
