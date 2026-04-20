@@ -24,7 +24,7 @@ ul {
 }
 
 ul li {
-  float: left;
+  display: flex;
   border-right:3px solid #E5E7EB;
 }
 
@@ -49,7 +49,7 @@ ul li a.active {
 }
 
 ul li.dropdown {
-  display: inline-block;
+  display: flex;
   position: relative;
 }
 
