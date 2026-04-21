@@ -50,7 +50,7 @@ ul li a.active {
 
 ul li.dropdown {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .dropdown-content {
