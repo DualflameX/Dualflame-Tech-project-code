@@ -16,6 +16,47 @@ h1, h2 {
   text-align: center;
 }
 
+h1 {
+  color: #D94206;
+  background: linear-gradient(to right, #D94206, #7DD9FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+h2 {
+  color: #D95406;
+  background: linear-gradient(to right, #D95406, #7DE3FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h3 {
+  color: #D96506;
+  background: linear-gradient(to right, #D96506, #7DEEFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h4 {
+  color: #D97706;
+  background: linear-gradient(to right, #D97706, #7DF9FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h5 {
+  color: #D98906;
+  background: linear-gradient(to right, #D98906, #7DFFFA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 a:link {
   color: #D97706;
 }
@@ -40,7 +81,7 @@ ul {
 }
 
 ul li {
-  border-bottom:3px solid #E5E7EB;
+  border-bottom:3px solid #7DF9FF;
   width: 100%;
 }
 
@@ -60,7 +101,7 @@ ul li a:hover:not(.active), .dropdown:hover .dropbtn {
 }
 
 .dropbtn:visited {
- color: #D97706;
+  color: #D97706;
 }
 
 ul li a.active {
@@ -69,7 +110,7 @@ ul li a.active {
 }
 
 .dropdown:hover .dropbtn.active {
-    background-color: #A75C05;
+  background-color: #A75C05;
 }
 
 ul li.dropdown {
@@ -101,6 +142,147 @@ ul li.dropdown {
 }
 
 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.subbtnT1 {
+  display: block;
+  text-align: left;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover:not(.active), .subdownT1:hover .subbtnT1 {
+  background-color: #111;
+}
+
+.subbtnT1:visited {
+  color: #D97706;
+}
+
+ul li.subdownT1 {
+  display: block;
+  position: relative;
+}
+
+.subdown-contentT1 {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  left: 100%;
+  top: 0;
+}
+
+.subdown-contentT1 a {
+  color: #D97706;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.subdown-contentT1 a:hover {
+  background-color: #f1f1f1;
+}
+
+.subdownT1:hover .subdown-contentT1 {
+  display: block;
+}
+
+.subbtnT2 {
+  display: block;
+  text-align: left;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover:not(.active), .subdownT2:hover .subbtnT2 {
+  background-color: #111;
+}
+
+.subbtnT2:visited {
+  color: #D97706;
+}
+
+ul li.subdownT2 {
+  display: block;
+  position: relative;
+}
+
+.subdown-contentT2 {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+  left: 100%;
+  top: 0;
+}
+
+.subdown-contentT2 a {
+  color: #D97706;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.subdown-contentT2 a:hover {
+  background-color: #f1f1f1;
+}
+
+.subdownT2:hover .subdown-contentT2 {
+  display: block;
+}
+
+.subbtnT3 {
+  display: block;
+  text-align: left;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover:not(.active), .subdownT3:hover .subbtnT3 {
+  background-color: #111;
+}
+
+.subbtnT3:visited {
+  color: #D97706;
+}
+
+ul li.subdownT3 {
+  display: block;
+  position: relative;
+}
+
+.subdown-contentT3 {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+  left: 100%;
+  top: 0;
+}
+
+.subdown-contentT3 a {
+  color: #D97706;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.subdown-contentT3 a:hover {
+  background-color: #f1f1f1;
+}
+
+.subdownT3:hover .subdown-contentT3 {
   display: block;
 }
 
