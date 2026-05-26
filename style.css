@@ -81,11 +81,22 @@ ul {
 }
 
 ul li {
-  border-bottom:3px solid #7DF9FF;
   width: 100%;
 }
 
-ul li:last-child {
+ul li a, .dropdown-content a, [class^="subdown-content"] a {
+  border-bottom: 3px solid #7DF9FF;
+  border-right: 3px solid #7DF9FF;
+}
+
+ul li:last-child > a {
+  border-bottom: none;
+}
+
+.dropdown-content > a:last-child,
+.subdown-contentT1 > a:last-child,
+.subdown-contentT2 > a:last-child,
+.subdown-contentT3 > a:last-child {
   border-bottom: none;
 }
 
