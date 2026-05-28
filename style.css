@@ -1,8 +1,3 @@
-html {
-  scroll-behavior: smooth;
-  overflow-x: clip;
-}
-
 body {
   font-family: Lunar Escape;
   color: #E5E7EB;
@@ -297,23 +292,32 @@ ul li.subdownT3 {
   display: block;
 }
 
-ol li a, 
-ol li a:visited {
+ol li.info {
+  list-style-type: disc;
+  color: #E5E7EB;
+}
+
+ol li:has(.info)::marker {
+  color: #E5E7EB;
+}
+
+ol.custom-list li a, 
+ol.custom-list li a:visited {
   color: inherit;
 }
 
-ol li:has(a) {
+ol.custom-list li:has(a) {
   color: #D97706;
 }
 
-ol li:has(a)::marker { 
+ol.custom-list li:has(a)::marker { 
   color: #D97706; 
 }
 
-ol li.clicked {
+ol.custom-list li.clicked {
   color: #754003;
 }
 
-ol li.clicked::marker {
+ol.custom-list li.clicked::marker {
   color: #754003;
 }
