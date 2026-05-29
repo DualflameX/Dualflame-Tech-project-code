@@ -297,15 +297,6 @@ ul li.subdownT3 {
   display: block;
 }
 
-ol li.info {
-  list-style-type: disc;
-  color: #E5E7EB;
-}
-
-ol li:has(.info)::marker {
-  color: #E5E7EB;
-}
-
 ol.custom-list li a, 
 ol.custom-list li a:visited {
   color: inherit;
@@ -325,4 +316,13 @@ ol.custom-list li.clicked {
 
 ol.custom-list li.clicked::marker {
   color: #754003;
+}
+
+ol li.info {
+  list-style-type: disc;
+  color: #E5E7EB;
+}
+
+ol li:has(.info)::marker {
+  color: #E5E7EB;
 }
