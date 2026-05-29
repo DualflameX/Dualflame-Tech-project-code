@@ -297,32 +297,32 @@ ul li.subdownT3 {
   display: block;
 }
 
-ol.custom-list li a, 
-ol.custom-list li a:visited {
+ol li a, 
+ol li a:visited {
   color: inherit;
 }
 
-ol.custom-list li:has(a) {
+ol li:has(a) {
   color: #D97706;
 }
 
-ol.custom-list li:has(a)::marker { 
+ol li:has(a)::marker { 
   color: #D97706; 
 }
 
-ol.custom-list li.clicked {
+ol li.clicked {
   color: #754003;
 }
 
-ol.custom-list li.clicked::marker {
+ol li.clicked::marker {
   color: #754003;
 }
 
-ol li.info {
+ol.custom-list li.info {
   list-style-type: disc;
   color: #E5E7EB;
 }
 
-ol li:has(.info)::marker {
+ol.custom-list li:has(.info)::marker {
   color: #E5E7EB;
 }
