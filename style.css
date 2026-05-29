@@ -318,11 +318,15 @@ ol li.clicked::marker {
   color: #754003;
 }
 
-ol.custom-list li.info {
+/* Using the pseudo-element method to mimic list markers for <dt> */
+dl.custom-list dt {
+  display: list-item;
   list-style-type: disc;
+  list-style-position: inside;
   color: #E5E7EB;
 }
 
-ol.custom-list li:has(.info)::marker {
+/* Specifically styling the marker color */
+dl.custom-list dt::marker {
   color: #E5E7EB;
 }
