@@ -318,15 +318,35 @@ ol li.clicked::marker {
   color: #754003;
 }
 
-/* Using the pseudo-element method to mimic list markers for <dt> */
+dl.custom-list {
+  margin-left: 10px; 
+}
+
 dl.custom-list dt {
   display: list-item;
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: outside;
   color: #E5E7EB;
 }
 
-/* Specifically styling the marker color */
 dl.custom-list dt::marker {
   color: #E5E7EB;
+  font-size: 1.5em;
+}
+
+dl.custom-list dd {
+  margin-inline-start: 0;
+}
+
+dl.custom-list dl.custom-list {
+  margin-left: 1.5rem;
+  margin-top: 0.25rem;
+}
+
+dl.custom-list dd dl.custom-list dt {
+  list-style-type: circle;
+}
+
+dl.custom-list dd dl.custom-list dd dl.custom-list dt {
+  list-style-type: square;
 }
